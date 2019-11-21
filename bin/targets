@@ -1,0 +1,12 @@
+#!/bin/bash
+##
+## USAGE:
+## bin/targets
+
+find -L data/ \
+	-type f \
+	-name "*.validPairs" \
+	-exec sh -c 'dirname $0' {} \; \
+| sed -r 's#^data/#results/#' \
+| sort -u
+
