@@ -6,7 +6,8 @@
 find -L data/ \
 	-type f \
 	-name "*.validPairs" \
-	-exec sh -c 'dirname $0' {} \; \
-| sed -r 's#^data/#results/#' \
+	-exec sh -c 'filepath=$(dirname $0) ; dirname $filepath' {} \; \
+| sed -r \
+	's#^data/#results/#' \
 | sort -u
 
