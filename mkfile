@@ -9,7 +9,7 @@ et  DESCRIPTION:
 #
 # AUTHOR: HRG
 #
-# Run HiC-Pro alignment.
+# Run HiC-Pro scripts that build and normalise matrices.
 #
 results/%:	data/%
 	mkdir -p `dirname $target`
@@ -18,5 +18,6 @@ results/%:	data/%
 		--output $target \
 		--conf config.hicpro \
 		--step merge_persample \
-		--step build_contact_maps
+		--step build_contact_maps \
+		--step ice_norm
 
