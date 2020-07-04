@@ -1,4 +1,4 @@
-et  DESCRIPTION:
+# DESCRIPTION:
 # mk module to run HiC-Pro pipeline up to contact maps
 #
 # USAGE:
