@@ -13,7 +13,7 @@ RAW_DIR = rawdata
 #######################################################################
 ## SYSTEM AND SCHEDULER - Start Editing Here !!
 #######################################################################
-N_CPU = 8
+N_CPU = 12
 LOGFILE = MCF-data-hicpro.log
 
 #JOB_NAME = 
@@ -46,7 +46,7 @@ BOWTIE2_LOCAL_OPTIONS =  --very-sensitive -L 20 --score-min L,-0.6,-0.2 --end-to
 #######################################################################
 
 REFERENCE_GENOME = genome
-GENOME_SIZE = /home/hreyes/projects/hic-cancer/oct-hicpro/01-hicpro-validpairs/annotation-files/hg38.chrom.sizes.txt
+GENOME_SIZE = /home/hreyes/projects/hic-cancer/breast-hicpro/01-hicpro-validpairs/annotation-files/hg38.chrom.sizes.txt
 
 #######################################################################
 ## Allele specific analysis
@@ -65,7 +65,7 @@ ALLELE_SPECIFIC_SNP =
 ## Digestion Hi-C
 #######################################################################
 
-GENOME_FRAGMENT = /home/hreyes/projects/hic-cancer/oct-hicpro/01-hicpro-validpairs/annotation-files/restriction-fragments/hic-GRCh38-HindIII.bed
+GENOME_FRAGMENT = /home/hreyes/projects/hic-cancer/breast-hicpro/01-hicpro-validpairs/annotation-files/restriction-fragments/hic-GRCh38-HindIII.bed
 LIGATION_SITE = AAGCTAGCTT
 MIN_FRAG_SIZE = 100
 MAX_FRAG_SIZE = 100000
@@ -87,7 +87,7 @@ RM_DUP = 1
 ## Contact Maps
 #######################################################################
 
-BIN_SIZE = 5000 10000 20000 40000 100000 500000 1000000
+BIN_SIZE = 50000 60000 70000 80000 90000 100000 200000 300000 400000 500000 600000 700000 800000 900000 1000000 2000000 3000000 4000000 5000000 6000000 7000000 8000000 9000000 10000000
 MATRIX_FORMAT = upper
 
 #######################################################################
